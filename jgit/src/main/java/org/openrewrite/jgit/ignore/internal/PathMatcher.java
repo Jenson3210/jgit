@@ -40,8 +40,10 @@ public class PathMatcher extends AbstractMatcher {
 
 	private final boolean beginning;
 
-	private PathMatcher(String pattern, Character pathSeparator,
-			boolean dirOnly)
+	//Changed access modifier for test/bug showing
+	//TODO make private again
+    public PathMatcher(String pattern, Character pathSeparator,
+                       boolean dirOnly)
 			throws InvalidPatternException {
 		super(pattern, dirOnly);
 		slash = getPathSeparator(pathSeparator);

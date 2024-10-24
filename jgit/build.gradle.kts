@@ -5,6 +5,8 @@ plugins {
 dependencies {
     implementation("com.googlecode.javaewah:JavaEWAH:1.1.13")
     compileOnly("org.slf4j:slf4j-api:1.7.36")
+
+    testImplementation("org.slf4j:slf4j-simple:2.0.16")
 }
 
 java {
